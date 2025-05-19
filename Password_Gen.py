@@ -14,11 +14,11 @@ num_symbols = int(input("How many symbols would you like in the password\n"))
 
 
 for i in range(0, num_letters):
-    password = password + list((random.choice(letters)))
+    password += list((random.choice(letters)))
 for j in range(0, num_numbers):
-    password = password + list((random.choice(numbers)))
+    password += list((random.choice(numbers)))
 for k in range(0, num_numbers):
-    password = password + list((random.choice(symbols)))
+    password += list((random.choice(symbols)))
 
 new_password = random.shuffle(password)
 #print(password)
